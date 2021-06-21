@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
     background: #eeeeee;
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +9,9 @@ body {
 
 nav {
     background: #12869b;
+    -webkit-box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
+    -moz-box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
+    box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
 }
 
 nav ul {
@@ -180,4 +184,21 @@ small {
     border-radius: 2px;
     padding-left: 10px;
     padding-right: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: #12869b;
+    width: 100%;
+    padding: 15px 0;
+    border: solid 1px #f1f1e8;
+    -webkit-box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
+    -moz-box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
+    box-shadow: -1px 29px 73px 18px rgba(174, 181, 175, 1);
+}
+
+footer div {
+    text-align: center;
+    color: #f1f1e8;
 }
