@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Edit Recipe</h1>
+        <div class="items-container">
+            <div class="item">
+                <form method="POST">
+                    {% csrf_token %}
+                    <label for="title">Title</label>
+                    {{ form.title }}
+                    <label for="imageURL">Image URL</label>
+                    {{ form.image_url }}
+                    <label for="description">Description</label>
+                    {{ form.description }}
+                    <label for="ingredients">Ingredients</label>
+                    {{ form.ingredients }}
+                    <label for="time">Time (Minutes)</label>
+                    {{ form.time }}
+                    <small>{{ form.time.errors }}</small>
+                    <input type="submit" class="button edit" value="Edit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
